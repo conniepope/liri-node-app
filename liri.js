@@ -2,8 +2,8 @@ require("dotenv").config();
 
 var keys = require("./keys.js");
 
-// var Spotify = require('node-spotify-api');
-// var spotify = new Spotify(keys);
+var Spotify = require('node-spotify-api');
+var spotify = new Spotify(keys.spotify);
 
 var axios = require("axios");
 
@@ -27,85 +27,88 @@ switch (type) {
 }
 // _____________________________________________________
 function concert() {
+    
+    var artist = process.argv.slice(3).join("+");
 
-    var nodeArgs = process.argv;
+    // var artist = "";
 
-    var artist = "";
-
-    //loop for for than 1 word
-    for (var i = 2; i < nodeArgs.length; i++) {
-
-        if (i > 2 && i < nodeArgs.length) {
-            artist = artist + "+" + nodeArgs[i];
-        } else {
-            artist += nodeArgs[i];
-        }
-    }
-
-    var queryURLconcert = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
-
-    axios.get(queryURLconcert).then(function(response) {
-        for (var i = 0; i < response.length; i++) {
-            console.log(response.venue)
-            // console.log(response.location)            how to display object?????
-            // console.log(response.datetime.moment().format("MM/DD/YYYY"))      datetime is undefined?????
-        }
-    })
-}
-// _____________________________________________________
-
-// function song() {
-
-    // var nodeArgs = process.argv;
-
-    // var song = "";
-
-    // //loop for for than 1 word
+    // //loop for more than 1 word
     // for (var i = 2; i < nodeArgs.length; i++) {
 
     //     if (i > 2 && i < nodeArgs.length) {
-    //         song = song + "+" + nodeArgs[i];
+    //         artist = artist + "+" + nodeArgs[i];
     //     } else {
-    //         song += nodeArgs[i];
+    //         artist += nodeArgs[i];
     //     }
     // }
 
-//     var queryURLspotify = ""                   URL ????????
+    var queryURLconcert = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
 
-//     spotify                                   use this?????????
-//         .search({query: song})
-//             .then(function(response) {
-//              console.log(response);
-//             })
-//             .catch(function(err) {
-//                  console.log(err);
-//              })
+    console.log(queryURLconcert)
+    axios.get(queryURLconcert).then(function(response) {
+        console.log(response)
+
+        // for (var i = 0; i < response.length; i++) {
+            console.log(JSON.stringify(response[0], null, 2))    // response = undefined ?????
+            // console.log(response.location)            how to display object?????
+            // console.log(response.datetime.moment().format("MM/DD/YYYY"))      datetime is undefined?????
+        // }
+    })
+    .catch(function(error) {
+        console.log("error")
+        // if (error.response) {
+        //   // The request was made and the server responded with a status code
+        //   // that falls out of the range of 2xx
+        //   console.log("---------------Data---------------");
+        //   console.log(error.response.data);
+        //   console.log("---------------Status---------------");
+        //   console.log(error.response.status);
+        //   console.log("---------------Status---------------");
+        //   console.log(error.response.headers);
+        // } else if (error.request) {
+        //   // The request was made but no response was received
+        //   // `error.request` is an object that comes back with details pertaining to the error that occurred.
+        //   console.log(error.request);
+        // } else {
+        //   // Something happened in setting up the request that triggered an Error
+        //   console.log("Error", error.message);
+        // }
+        // console.log(error.config);
+      });
+    
+  
+}   
+// _____________________________________________________
+
+function song() {
+
+    var song = process.argv.slice(3).join(" ");
+
+    // var queryURLspotify = "https://www.npmjs.com/package/node-spotify-api "         
+
+    spotify                                   
+        .search({query: song})
+            .then(function(response) {
+             console.log(response);
+            })
+            .catch(function(err) {
+                 console.log(err);
+             })
+}       // Error: You must specify a type and query for your search. ?????????
 // _____________________________________________________
 
 function movie() {
 
-    var nodeArgs = process.argv;
-
-    var movieName = "";
-
-    //loop for for than 1 word
-    for (var i = 2; i < nodeArgs.length; i++) {
-
-        if (i > 2 && i < nodeArgs.length) {
-            movieName = movieName + "+" + nodeArgs[i];
-        } else {
-            movieName += nodeArgs[i];
-        }
-    }
+    var movieName = process.argv.slice(3).join(" ");
     
     var queryURLmovie = "http://www.omdbapi.com/?apikey=trilogy&?t=" + movieName
 
     axios.get(queryURLmovie).then(function(response) {
-        for (var i = 0; i < response.length; i++) {
-            console.log(response)
-        }
+        // for (var i = 0; i < response.length; i++) {
+            console.log(JSON.stringify(response[0], null, 2))
+        // }
     })
-}                            // when run, terminal says "this is loaded" and prints out nothing ??????
+}  //  response = undefined ?????
 
     // Output the following:
     //    * Title of the movie.
@@ -120,9 +123,11 @@ function movie() {
     if (movieName = "") {
         movieName = "Mr. Nobody"
     }
+
+    // 
 // _____________________________________________________
 
-function doWhatItSays() {
+function says() {
     fs.readFile("random.txt", "utf8", function(err, data) {
         if (err) {
             return console.log(err);
