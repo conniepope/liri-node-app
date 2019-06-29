@@ -46,16 +46,19 @@ function concert() {
 
     console.log(queryURLconcert)
     axios.get(queryURLconcert).then(function(response) {
-        console.log(response)
+        console.log(response.data[0])
 
-        // for (var i = 0; i < response.length; i++) {
-            console.log(JSON.stringify(response[0], null, 2))    // response = undefined ?????
-            // console.log(response.location)            how to display object?????
+        for (var i = 0; i < response.data.length; i++) {
+            var concert = response.data[i];
+        
+            console.log(concert.venue.name); 
+            console.log(concert.venue.city + ", " + concert.venue.region);       
             // console.log(response.datetime.moment().format("MM/DD/YYYY"))      datetime is undefined?????
-        // }
+            console.log()
+        }
     })
     .catch(function(error) {
-        console.log("error")
+        console.log(JSON.stringify(error))
         // if (error.response) {
         //   // The request was made and the server responded with a status code
         //   // that falls out of the range of 2xx
