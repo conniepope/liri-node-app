@@ -46,15 +46,20 @@ function concert() {
 
     console.log(queryURLconcert)
     axios.get(queryURLconcert).then(function(response) {
-        console.log(response.data[0])
+        // console.log(response.data[0])
 
         for (var i = 0; i < response.data.length; i++) {
             var concert = response.data[i];
+            var format = "MM/DD/YYYY"
+            var date = moment(concert.datetime, format);
+
         
             console.log(concert.venue.name); 
-            console.log(concert.venue.city + ", " + concert.venue.region);       
-            // console.log(response.datetime.moment().format("MM/DD/YYYY"))      datetime is undefined?????
+            console.log(concert.venue.city + ", " + concert.venue.region); 
+            // console.log(concert.datetime)      
+            // console.log(date)    
             console.log()
+        // .moment().format("MM/DD/YYYY")
         }
     })
     .catch(function(error) {
@@ -90,14 +95,27 @@ function song() {
     // var queryURLspotify = "https://www.npmjs.com/package/node-spotify-api "         
 
     spotify                                   
-        .search({query: song})
+        .search({
+            type: "track",
+            query: song})
             .then(function(response) {
-             console.log(response);
+                
+                // console.log(response)
+                for (var i = 0; i < response.tracks.items.length; i++) {
+                    var info = response.tracks.items[i]
+                    // console.log(info)
+                    console.log(info.artists[0].name)      //works     
+                    console.log(info.name);  //works
+                    // // //preview link
+                    console.log(info.preview_url);   
+                    console.log(info.album.name);  //works
+                    console.log();  //works
+                }
             })
             .catch(function(err) {
                  console.log(err);
              })
-}       // Error: You must specify a type and query for your search. ?????????
+}       
 // _____________________________________________________
 
 function movie() {
