@@ -2,12 +2,7 @@
 LIRI, a command line node app that takes in parameters and gives you back data.
 
 ## Technologies Used:
-Node.js
-Javascript
-APIs
-Axios
-Moment.js
-JSON
+Node.js, Javascript, APIs, Axios, Moment.js, JSON
 
 ## How it works:
 1. Type into the terminal: node liri 
