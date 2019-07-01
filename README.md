@@ -1,7 +1,7 @@
-# liri-node-app
+# Liri Node App
 LIRI, a command line node app that takes in parameters and gives you back data.
 
-# Technologies Used:
+## Technologies Used:
 Node.js
 Javascript
 APIs
@@ -9,7 +9,7 @@ Axios
 Moment.js
 JSON
 
-# How it works:
+## How it works:
 1. Type into the terminal: node liri 
 2. After that, type in one of these four options: concert-this, spotify-this-song, movie-this, or do-what-it-says.
   A) If you type concert-this, next type in an artist. Once you hit enter, the following will display:
