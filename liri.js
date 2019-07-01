@@ -9,6 +9,9 @@ var axios = require("axios");
 
 var fs = require("fs")
 
+var moment = require("moment")
+
+
 var type = process.argv[2]
 
 switch (type) {
@@ -25,22 +28,11 @@ switch (type) {
     says();
     break;
 }
+
 // _____________________________________________________
-function concert() {        // WORKING except date
+function concert() {      
     
     var artist = process.argv.slice(3).join("+");
-
-    // var artist = "";
-
-    // //loop for more than 1 word
-    // for (var i = 2; i < nodeArgs.length; i++) {
-
-    //     if (i > 2 && i < nodeArgs.length) {
-    //         artist = artist + "+" + nodeArgs[i];
-    //     } else {
-    //         artist += nodeArgs[i];
-    //     }
-    // }
 
     var queryURLconcert = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
 
@@ -50,50 +42,28 @@ function concert() {        // WORKING except date
 
         for (var i = 0; i < response.data.length; i++) {
             var concert = response.data[i];
-            var format = "MM/DD/YYYY"
-            var date = moment(concert.datetime, format);
+            var format = moment.HTML5_FMT.DATETIME_LOCAL_SECONDS;
+            var date = moment(concert.datetime).format("LL")
 
-        
+            // console.log(concert)
             console.log(concert.venue.name); 
-            console.log(concert.venue.city + ", " + concert.venue.region); 
-            // console.log(concert.datetime)      
-            // console.log(date)    
+            console.log(concert.venue.city + " " + concert.venue.region); 
+            console.log(date)    
             console.log()
-        // .moment().format("MM/DD/YYYY")      ????? currently not working
         }
     })
     .catch(function(error) {
-        console.log(JSON.stringify(error))
-        // if (error.response) {
-        //   // The request was made and the server responded with a status code
-        //   // that falls out of the range of 2xx
-        //   console.log("---------------Data---------------");
-        //   console.log(error.response.data);
-        //   console.log("---------------Status---------------");
-        //   console.log(error.response.status);
-        //   console.log("---------------Status---------------");
-        //   console.log(error.response.headers);
-        // } else if (error.request) {
-        //   // The request was made but no response was received
-        //   // `error.request` is an object that comes back with details pertaining to the error that occurred.
-        //   console.log(error.request);
-        // } else {
-        //   // Something happened in setting up the request that triggered an Error
-        //   console.log("Error", error.message);
-        // }
-        // console.log(error.config);
-      });
-    
-  
+          console.log("Error", error.message);
+    });
 }   
 // _____________________________________________________
 
-function song() {       // WORKING except when no song is provided
+function song() {     
 
     var song = process.argv.slice(3).join(" ");
-
-    if (process.argv = "") {
-        song = "The+Sign"
+    
+    if (process.argv[3] === undefined) {
+        song = "The Sign"
     }
 
     // if (song = "") {
@@ -115,12 +85,11 @@ function song() {       // WORKING except when no song is provided
                 for (var i = 0; i < response.tracks.items.length; i++) {
                     var info = response.tracks.items[i]
                     // console.log(info)
-                    console.log(info.artists[0].name)      //works     
-                    console.log(info.name);  //works
-                    // // //preview link
+                    console.log(info.artists[0].name)      
+                    console.log(info.name);  
                     console.log(info.preview_url);   
-                    console.log(info.album.name);  //works
-                    console.log();  //works
+                    console.log(info.album.name);  
+                    console.log();  
                 }
             })
             .catch(function() {
@@ -128,40 +97,38 @@ function song() {       // WORKING except when no song is provided
                 console.log(song)
              })
 }       
-//  - If no song is provided, it will default to "The Sign" by Ace of Base.
+
 // _____________________________________________________
 
-function movie() {
+function movie() {      
 
     var movieName = process.argv.slice(3).join(" ");
+
+    if (process.argv[3] === undefined) {
+        movieName = "Mr. Nobody"
+    }
     
     var queryURLmovie = "http://www.omdbapi.com/?apikey=trilogy&t=" + movieName
 
     axios.get(queryURLmovie).then(function(response) {
-        // for (var i = 0; i < response.length; i++) {
-            // console.log(response)
-        // }
+
         var movie = response.data;
 
-        // Output the following:
-        console.log(movie.Title)    //works
-        console.log("Year the movie came out: " + movie.Year)  //works
-        console.log("IMDB Rating: " + movie.imdbRating)     //works
+        console.log(movie.Title)    
+        console.log("Year the movie came out: " + movie.Year)  
+        console.log("IMDB Rating: " + movie.imdbRating)     
         console.log(movie.Ratings[1].Source + " Rating: " + movie.Ratings[1].Value)
-        console.log("Produced in: " + movie.Country)  //works
-        console.log("Languages of the movie: " + movie.Language) //works
-        console.log("The Plot: " + movie.Plot)     //works
-        console.log("Actors: " + movie.Actors)  //works
-
-
-        if (movieName = "") {
-            movieName = "Mr. Nobody"
-        }
+        console.log("Produced in: " + movie.Country)  
+        console.log("Languages of the movie: " + movie.Language) 
+        console.log("The Plot: " + movie.Plot)     
+        console.log("Actors: " + movie.Actors)  
+        console.log();  
 })
 } 
 // _____________________________________________________
 
-function says() {
+function says() {       //not sure exactly what this is supposed to do
+
     fs.readFile("random.txt", "utf8", function(err, data) {
         if (err) {
             return console.log(err);
