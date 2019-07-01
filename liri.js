@@ -26,7 +26,7 @@ switch (type) {
     break;
 }
 // _____________________________________________________
-function concert() {
+function concert() {        // WORKING except date
     
     var artist = process.argv.slice(3).join("+");
 
@@ -59,7 +59,7 @@ function concert() {
             // console.log(concert.datetime)      
             // console.log(date)    
             console.log()
-        // .moment().format("MM/DD/YYYY")
+        // .moment().format("MM/DD/YYYY")      ????? currently not working
         }
     })
     .catch(function(error) {
@@ -88,10 +88,21 @@ function concert() {
 }   
 // _____________________________________________________
 
-function song() {
+function song() {       // WORKING except when no song is provided
 
     var song = process.argv.slice(3).join(" ");
 
+    if (process.argv = "") {
+        song = "The+Sign"
+    }
+
+    // if (song = "") {
+    //     spotify.search({type: "track", query: "The Sign"})
+    //         .then(function(response){
+
+    //         })
+    // }
+    
     // var queryURLspotify = "https://www.npmjs.com/package/node-spotify-api "         
 
     spotify                                   
@@ -112,40 +123,42 @@ function song() {
                     console.log();  //works
                 }
             })
-            .catch(function(err) {
-                 console.log(err);
+            .catch(function() {
+                song = "The+Sign";
+                console.log(song)
              })
 }       
+//  - If no song is provided, it will default to "The Sign" by Ace of Base.
 // _____________________________________________________
 
 function movie() {
 
     var movieName = process.argv.slice(3).join(" ");
     
-    var queryURLmovie = "http://www.omdbapi.com/?apikey=trilogy&?t=" + movieName
+    var queryURLmovie = "http://www.omdbapi.com/?apikey=trilogy&t=" + movieName
 
     axios.get(queryURLmovie).then(function(response) {
         // for (var i = 0; i < response.length; i++) {
-            console.log(JSON.stringify(response[0], null, 2))
+            // console.log(response)
         // }
-    })
-}  //  response = undefined ?????
+        var movie = response.data;
 
-    // Output the following:
-    //    * Title of the movie.
-    //    * Year the movie came out.
-    //    * IMDB Rating of the movie.
-    //    * Rotten Tomatoes Rating of the movie.
-    //    * Country where the movie was produced.
-    //    * Language of the movie.
-    //    * Plot of the movie.
-    //    * Actors in the movie.
+        // Output the following:
+        console.log(movie.Title)    //works
+        console.log("Year the movie came out: " + movie.Year)  //works
+        console.log("IMDB Rating: " + movie.imdbRating)     //works
+        console.log(movie.Ratings[1].Source + " Rating: " + movie.Ratings[1].Value)
+        console.log("Produced in: " + movie.Country)  //works
+        console.log("Languages of the movie: " + movie.Language) //works
+        console.log("The Plot: " + movie.Plot)     //works
+        console.log("Actors: " + movie.Actors)  //works
 
-    if (movieName = "") {
-        movieName = "Mr. Nobody"
-    }
 
-    // 
+        if (movieName = "") {
+            movieName = "Mr. Nobody"
+        }
+})
+} 
 // _____________________________________________________
 
 function says() {
