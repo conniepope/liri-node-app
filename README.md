@@ -24,7 +24,7 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
        * A preview link to the song from Spotify. If you Command-click on the link it will play a snippet of the song.
        * The album the song is from.
   
-![image](https://user-images.githubusercontent.com/47279070/60462289-e19eb900-9c16-11e9-9e63-9c8b93cf3c67.png)
+![image](https://user-images.githubusercontent.com/47279070/60548999-8db4d280-9cf1-11e9-93d0-8197db0a0880.png)
 
   * If you type movie-this, next type in a movie name. Once you hit enter, the following will display:
        * Title of the movie.
@@ -36,7 +36,7 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
        * Plot of the movie.
        * Actors in the movie.
  
- ![image](https://user-images.githubusercontent.com/47279070/60462529-8c16dc00-9c17-11e9-869e-c68bd8a110ee.png)
+ ![image](https://user-images.githubusercontent.com/47279070/60549102-dff5f380-9cf1-11e9-80b3-fd54983e5523.png)
 
   * If you type do-what-it-says, just hit enter and see what it does!
  3. If you do not pick an artist or movie in their designated catagories, one will be chosen for you.
