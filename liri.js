@@ -57,11 +57,16 @@ function concert() {
             var format = moment.HTML5_FMT.DATETIME_LOCAL_SECONDS;
             var date = moment(concert.datetime).format("LLL")
 
-            console.log("------------ EVENT --------------")
+            console.log("------------ EVENT --------------");
+            fs.appendFileSync("log.txt", "------------ EVENT --------------\n");
             console.log("Venue: " + concert.venue.name); 
+            fs.appendFileSync("log.txt", "Venue: " + concert.venue.name + "\n");
             console.log("Location: " + concert.venue.city + " " + concert.venue.region); 
-            console.log(date)
-            console.log()
+            fs.appendFileSync("log.txt", "Location: " + concert.venue.city + " " + concert.venue.region + "\n");
+            console.log(date);
+            fs.appendFileSync("log.txt", date + "\n");
+            console.log();
+            fs.appendFileSync("log.txt", "\n")
 
         }
     })
@@ -87,13 +92,18 @@ function song() {
             
             for (var i = 0; i < response.tracks.items.length; i++) {
                 var info = response.tracks.items[i]
-                console.log("------------ SONGS --------------")
-                console.log("Artist: " + info.artists[0].name)      
-                console.log("Song: " + info.name);  
-                console.log("Preview Link: " + info.preview_url);   
-                console.log("Album: " + info.album.name);  
+                console.log("------------ SONGS --------------");
+                fs.appendFileSync("log.txt", "------------ SONGS --------------\n");
+                console.log("Artist: " + info.artists[0].name);
+                fs.appendFileSync("log.txt", "Artist: " + info.artists[0].name + "\n");
+                console.log("Song: " + info.name);
+                fs.appendFileSync("log.txt", "Song: " + info.name + "\n");
+                console.log("Preview Link: " + info.preview_url); 
+                fs.appendFileSync("log.txt", "Preview Link: " + info.preview_url + "\n");  
+                console.log("Album: " + info.album.name); 
+                fs.appendFileSync("log.txt", "Album: " + info.album.name + "\n") 
                 console.log();  
-
+                fs.appendFileSync("log.txt", "\n")
             }
         })
 }       
@@ -116,16 +126,26 @@ function movie() {
             console.log(error);
         } else {
         console.log("------------ MOVIE --------------");  
-        console.log(movie.Title)    
-        console.log("The Plot: " + movie.Plot) 
-        console.log("Actors: " + movie.Actors)      
-        console.log("Year the movie came out: " + movie.Year)  
-        console.log("Produced in: " + movie.Country)  
-        console.log("Languages of the movie: " + movie.Language) 
-        console.log("IMDB Rating: " + movie.imdbRating) 
-        console.log(movie.Ratings[1].Source + " Rating: " + movie.Ratings[1].Value)
+        fs.appendFileSync("log.txt", "------------ MOVIE --------------\n");
+        console.log(movie.Title); 
+        fs.appendFileSync("log.txt", movie.Title + "\n");  
+        console.log("The Plot: " + movie.Plot); 
+        fs.appendFileSync("log.txt", "The Plot: " + movie.Plot + "\n");
+        console.log("Actors: " + movie.Actors);  
+        fs.appendFileSync("log.txt", "Actors: " + movie.Actors + "\n");     
+        console.log("Year the movie came out: " + movie.Year);
+        fs.appendFileSync("log.txt", "Year the movie came out: " + movie.Year + "\n"); 
+        console.log("Produced in: " + movie.Country);  
+        fs.appendFileSync("log.txt", "Produced in: " + movie.Country + "\n");
+        console.log("Languages of the movie: " + movie.Language); 
+        fs.appendFileSync("log.txt", "Languages of the movie: " + movie.Language + "\n");
+        console.log("IMDB Rating: " + movie.imdbRating);
+        fs.appendFileSync("log.txt", "IMDB Rating: " + movie.imdbRating + "\n");
+        console.log(movie.Ratings[1].Source + " Rating: " + movie.Ratings[1].Value);
+        fs.appendFileSync("log.txt", movie.Ratings[1].Source + " Rating: " + movie.Ratings[1].Value + "\n");
         // console.log("Rotten Tomatoes Rating: " + getRottenTomatoesRatingValue(movie))
         console.log();  
+        fs.appendFileSync("log.txt", "\n")
         }
     })
 

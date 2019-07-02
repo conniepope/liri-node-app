@@ -1,0 +1,300 @@
+------------ EVENT --------------
+Venue: American Airlines Arena
+Location: Miami FL
+August 7, 2019 12:00 AM
+
+------------ EVENT --------------
+Venue: Amway Center
+Location: Orlando FL
+August 9, 2019 12:00 AM
+
+------------ EVENT --------------
+Venue: Amalie Arena
+Location: Tampa FL
+August 10, 2019 12:00 AM
+
+------------ EVENT --------------
+Venue: State Farm Arena
+Location: Atlanta GA
+August 12, 2019 12:00 AM
+
+------------ EVENT --------------
+Venue: PNC Arena
+Location: Raleigh NC
+August 14, 2019 12:00 AM
+
+------------ EVENT --------------
+Venue: Capital One Arena
+Location: Washington DC
+August 15, 2019 12:00 AM
+
+------------ EVENT --------------
+Venue: TD Garden
+Location: Boston MA
+August 17, 2019 12:00 AM
+
+------------ EVENT --------------
+Venue: Wells Fargo Center
+Location: Philadelphia PA
+August 18, 2019 12:00 AM
+
+------------ EVENT --------------
+Venue: Times Union Center
+Location: Albany NY
+August 19, 2019 7:00 PM
+
+------------ EVENT --------------
+Venue: Mohegan Sun Arena
+Location: Montville Center CT
+August 21, 2019 12:00 AM
+
+------------ SONGS --------------
+Artist: Ramin Djawadi
+Song: The Night King
+Preview Link: https://p.scdn.co/mp3-preview/310a325dc37f428a2b4738f1553474ef50625a6b?cid=fd8ec660f0c7480e8670373229c66647
+Album: Game Of Thrones: Season 8 (Music from the HBO Series)
+
+------------ SONGS --------------
+Artist: Andrew Lloyd Webber
+Song: The Music Of The Night
+Preview Link: null
+Album: The Phantom Of The Opera (Original Motion Picture Soundtrack)
+
+------------ SONGS --------------
+Artist: Charles Hart
+Song: The Music Of The Night
+Preview Link: null
+Album: The Phantom Of The Opera
+
+------------ SONGS --------------
+Artist: Ramin Djawadi
+Song: The Long Night, Pt. 1
+Preview Link: https://p.scdn.co/mp3-preview/57136bf7d8fa881f602b4f410cb42db58f3ac337?cid=fd8ec660f0c7480e8670373229c66647
+Album: Game Of Thrones: Season 8 (Music from the HBO Series)
+
+------------ SONGS --------------
+Artist: Ramin Djawadi
+Song: The Long Night, Pt. 2
+Preview Link: https://p.scdn.co/mp3-preview/16f39e541df6f626560bdbe96277150bc71692e6?cid=fd8ec660f0c7480e8670373229c66647
+Album: Game Of Thrones: Season 8 (Music from the HBO Series)
+
+------------ SONGS --------------
+Artist: Edvard Grieg
+Song: Peer Gynt, Op. 23: IV. In the Hall of the Mountain King
+Preview Link: https://p.scdn.co/mp3-preview/83faaa9bd3778412e2d9d0f56fd5064c5789b336?cid=fd8ec660f0c7480e8670373229c66647
+Album: Fright Night: Music That Goes Bump in the Night
+
+------------ SONGS --------------
+Artist: James Horner
+Song: The bioluminescence of the night
+Preview Link: https://p.scdn.co/mp3-preview/ccc68d9f86815bcb724eeaff5e75b8b499953714?cid=fd8ec660f0c7480e8670373229c66647
+Album: AVATAR Music From The Motion Picture Music Composed and Conducted by James Horner
+
+------------ SONGS --------------
+Artist: Andrew Lloyd Webber
+Song: The Music Of the Night - Live At The Royal Albert Hall/2011
+Preview Link: null
+Album: The Phantom Of The Opera At The Royal Albert Hall
+
+------------ SONGS --------------
+Artist: Ramin Djawadi
+Song: The Night Is Dark
+Preview Link: https://p.scdn.co/mp3-preview/1de44c53b89c10f8dca69e2696194698ceb26507?cid=fd8ec660f0c7480e8670373229c66647
+Album: Game Of Thrones: Season 3 (Music from the HBO Series)
+
+------------ SONGS --------------
+Artist: Gliese
+Song: The Rythm of the Night
+Preview Link: https://p.scdn.co/mp3-preview/ff6040a8b18429c8410ce0fc83f231bb75eb437c?cid=fd8ec660f0c7480e8670373229c66647
+Album: Best of Dance Disco Music Hits 80's 90's. La Mejor Música Dance Y Disco De Los 80 90
+
+------------ SONGS --------------
+Artist: Pyotr Ilyich Tchaikovsky
+Song: Waltz Of The Flowers From The Nutcracker
+Preview Link: https://p.scdn.co/mp3-preview/781b60617814aa1e14d038d461cc61054f1395d0?cid=fd8ec660f0c7480e8670373229c66647
+Album: Last Night of the Proms
+
+------------ SONGS --------------
+Artist: Richard Clayderman
+Song: The Music Of The Night (From "The Phantom of the Opera")
+Preview Link: https://p.scdn.co/mp3-preview/ace7d3e7acda4062a0ae46ad0e116fabd5a84f91?cid=fd8ec660f0c7480e8670373229c66647
+Album: Stage Musical Favourites
+
+------------ SONGS --------------
+Artist: Ramin Djawadi
+Song: The Night's Watch - From The "Game Of Thrones" Soundtrack
+Preview Link: null
+Album: Game Of Thrones (Music From The HBO Series)
+
+------------ SONGS --------------
+Artist: Andrew Lloyd Webber
+Song: The Music Of The Night
+Preview Link: null
+Album: The Phantom Of The Opera (Original Motion Picture Soundtrack / Deluxe Edition)
+
+------------ SONGS --------------
+Artist: Pyotr Ilyich Tchaikovsky
+Song: 1812 Overture
+Preview Link: https://p.scdn.co/mp3-preview/b60bf1e1c0f153f90945e3a9134c9b5d8698b8e8?cid=fd8ec660f0c7480e8670373229c66647
+Album: Last Night of the Proms
+
+------------ SONGS --------------
+Artist: Andrew Lloyd Webber
+Song: The Music Of The Night
+Preview Link: null
+Album: Highlights From The Phantom Of The Opera
+
+------------ SONGS --------------
+Artist: Stan Whitmire
+Song: Music Of The Night / All I Ask Of You - From "Phantom Of The Opera"
+Preview Link: null
+Album: Piano On Broadway: 30 Classic Broadway Songs On Solo Piano
+
+------------ SONGS --------------
+Artist: Baby Lullaby
+Song: Music Of The Night
+Preview Link: https://p.scdn.co/mp3-preview/7d11b480b0f30133d193fc51b6240e2d860028e7?cid=fd8ec660f0c7480e8670373229c66647
+Album: Movie Piano Lullabies Of Titanic, Twilight, Harry Potter, Braveheart, Forrest Gump And More...
+
+------------ SONGS --------------
+Artist: Jasun Martz
+Song: Night
+Preview Link: https://p.scdn.co/mp3-preview/3cb086f0bf5f71915a7c6edab2169f40945ec9f0?cid=fd8ec660f0c7480e8670373229c66647
+Album: Solo Exhibition: Chroma- The Essential Keyboard Music of Jasun Martz - A Retrospective
+
+------------ SONGS --------------
+Artist: Spa Atmospheres
+Song: Relaxing Night on the Beach
+Preview Link: https://p.scdn.co/mp3-preview/cd9fbec4961969b1194575dbc49b8343a8c27532?cid=fd8ec660f0c7480e8670373229c66647
+Album: One Hour of Campfire by the Ocean
+
+------------ MOVIE --------------
+A Star Is Born
+The Plot: A musician helps a young singer find fame as age and alcoholism send his own career into a downward spiral.
+Actors: Lady Gaga, Bradley Cooper, Sam Elliott, Andrew Dice Clay
+Year the movie came out: 2018
+Produced in: USA
+Languages of the movie: English
+IMDB Rating: 7.7
+Rotten Tomatoes Rating: 89%
+
+------------ SONGS --------------
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=fd8ec660f0c7480e8670373229c66647
+Album: The Hits--Chapter One
+
+------------ SONGS --------------
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/b8c2410a5acb68b462be6ac85f1312430e2b149c?cid=fd8ec660f0c7480e8670373229c66647
+Album: Millennium
+
+------------ SONGS --------------
+Artist: Backstreet Boys
+Song: I Want It That Way - Reimagined
+Preview Link: https://p.scdn.co/mp3-preview/7f612d6ba66571500e981e74bb36e14b9906be77?cid=fd8ec660f0c7480e8670373229c66647
+Album: I Want It That Way (Reimagined)
+
+------------ SONGS --------------
+Artist: Anthem Lights
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/4a163fbfa2dbbe4433f277e0e7395dca656364f5?cid=fd8ec660f0c7480e8670373229c66647
+Album: Covers Part IV
+
+------------ SONGS --------------
+Artist: Mick Jensen
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/f8181f66713983fab073e133e23c741acbe00d75?cid=fd8ec660f0c7480e8670373229c66647
+Album: I Want It That Way
+
+------------ SONGS --------------
+Artist: Jess and Gabriel
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/cc50bfee8d34ec92fda4109243c7ef0e6856f185?cid=fd8ec660f0c7480e8670373229c66647
+Album: Under the Covers, Vol. 3
+
+------------ SONGS --------------
+Artist: Tyler and Mark
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/99c791194bbd4e5f315ca8964babf0b69bc520b3?cid=fd8ec660f0c7480e8670373229c66647
+Album: Beautiful Dreams
+
+------------ SONGS --------------
+Artist: "Weird Al" Yankovic
+Song: Ebay (Parody of "I Want It That Way" by the Backstreet Boys)
+Preview Link: https://p.scdn.co/mp3-preview/e217ea111ab84a777f204252fce4b18d5de3ae80?cid=fd8ec660f0c7480e8670373229c66647
+Album: Poodle Hat
+
+------------ SONGS --------------
+Artist: Dynamite Boy
+Song: I Want It That Way
+Preview Link: null
+Album: Punk Goes Pop
+
+------------ SONGS --------------
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/2f96341eb8415a3efb27375db1c4d59928408c2f?cid=fd8ec660f0c7480e8670373229c66647
+Album: 90 Sweet 90s Hits!
+
+------------ SONGS --------------
+Artist: Glee Cast
+Song: Bye Bye Bye / I Want It That Way (Glee Cast Version)
+Preview Link: https://p.scdn.co/mp3-preview/3aa63b5c98b98ae333e567813e5c720abb2914f0?cid=fd8ec660f0c7480e8670373229c66647
+Album: Bye Bye Bye / I Want It That Way (Glee Cast Version)
+
+------------ SONGS --------------
+Artist: Steel Panther
+Song: I Want It That Way
+Preview Link: null
+Album: I Want It That Way
+
+------------ SONGS --------------
+Artist: Backstreet Boys
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/adf2485de3f3f375593b5307a792e8d8e6f19794?cid=fd8ec660f0c7480e8670373229c66647
+Album: NKOTBSB
+
+------------ SONGS --------------
+Artist: Boyce Avenue
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/764f1dcb8c9a9cec099cc361cb388f931bf023d3?cid=fd8ec660f0c7480e8670373229c66647
+Album: Cover Sessions, Vol. 2
+
+------------ SONGS --------------
+Artist: Scary Pockets
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/33685e005149d5e7d0199a764163ff77f7762e29?cid=fd8ec660f0c7480e8670373229c66647
+Album: Nu Funk
+
+------------ SONGS --------------
+Artist: Manuel Costa
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/cdde86f49ca4ef217ac08bbbb0c6295c16f015b0?cid=fd8ec660f0c7480e8670373229c66647
+Album: I Want It That Way
+
+------------ SONGS --------------
+Artist: Love Hits On Piano
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/f44bea13dbf31275a76f3dee8c40dcf25bd051f1?cid=fd8ec660f0c7480e8670373229c66647
+Album: Timeless Love
+
+------------ SONGS --------------
+Artist: Scott Bradlee's Postmodern Jukebox
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/53296f4b689baaa0be6d94e8720c044e98d4b3e3?cid=fd8ec660f0c7480e8670373229c66647
+Album: Selfies on Kodachrome
+
+------------ SONGS --------------
+Artist: Yshop
+Song: I Want It That Way
+Preview Link: https://p.scdn.co/mp3-preview/8d1287b933d37b96943a5041ebcd46c328c9a0ce?cid=fd8ec660f0c7480e8670373229c66647
+Album: I Want It That Way
+
+------------ SONGS --------------
+Artist: "Weird Al" Yankovic
+Song: Ebay (Parody of "I Want It That Way" by the Backstreet Boys)
+Preview Link: https://p.scdn.co/mp3-preview/5632d8e302d70afaa8f79c962aa4b2032a45b3ef?cid=fd8ec660f0c7480e8670373229c66647
+Album: The Essential "Weird Al" Yankovic
+
