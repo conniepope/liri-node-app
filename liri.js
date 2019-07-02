@@ -36,7 +36,11 @@ var switchType = function(type, inputParameter) {
         case "do-what-it-says":
         says();
         break;
+        default: 
+        console.log("Invalid input. Please type one of the following options: \n  concert-this \n  spotify-this-song \n  movie-this \n  do-what-it-says")
     }
+
+    
 }    
 switchType(type, inputParameter);
 
