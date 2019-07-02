@@ -18,7 +18,7 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
        * The venue city and region.
        * The date of the event.
        
-![image](https://user-images.githubusercontent.com/47279070/60462059-53c2ce00-9c16-11e9-9e89-a3aaa0d41616.png)
+![image](https://user-images.githubusercontent.com/47279070/60552124-9d391900-9cfb-11e9-8051-3f87cc06f6ff.png)
 
   * If you type spotify-this-song, next type in a song name. Once you hit enter, the following will display:
        * The artist's name.
@@ -26,7 +26,7 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
        * A preview link to the song from Spotify. If you Command-click on the link it will play a snippet of the song.
        * The album the song is from.
   
-![image](https://user-images.githubusercontent.com/47279070/60548999-8db4d280-9cf1-11e9-93d0-8197db0a0880.png)
+![image](https://user-images.githubusercontent.com/47279070/60552112-8abedf80-9cfb-11e9-83e3-12a64b58923d.png)
 
   * If you type movie-this, next type in a movie name. Once you hit enter, the following will display:
        * Title of the movie.
@@ -38,7 +38,7 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
        * IMDB rating of the movie.
        * Rotten Tomatoes rating of the movie.
  
- ![image](https://user-images.githubusercontent.com/47279070/60549102-dff5f380-9cf1-11e9-80b3-fd54983e5523.png)
+![image](https://user-images.githubusercontent.com/47279070/60552137-ac1fcb80-9cfb-11e9-99c5-5949ca8fc35d.png)
 
   * If you type do-what-it-says, just hit enter and see what it does!
  3. If you do not pick a song or movie in their designated catagories, one will be chosen for you.
