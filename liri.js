@@ -71,7 +71,7 @@ function song() {
 
     var song = inputParameter;
     
-    if (inputParameter === undefined) {
+    if (process.argv[3] === undefined && song !== "I want it that way") {
         song = "The Sign"
     }
 
@@ -85,16 +85,12 @@ function song() {
                 var info = response.tracks.items[i]
 
                 console.log();  
-                console.log(info.artists[0].name)      
-                console.log(info.name);  
-                console.log(info.preview_url);   
-                console.log(info.album.name);  
+                console.log("Artist: " + info.artists[0].name)      
+                console.log("Song: " + info.name);  
+                console.log("Preview Link: " + info.preview_url);   
+                console.log("Album: " + info.album.name);  
             }
         })
-        .catch(function() {
-            song = "The+Sign";
-            console.log(song)
-            })
 }       
 // _____________________________________________________
 
@@ -102,7 +98,7 @@ function movie() {
 
     var movieName = inputParameter;
 
-    if (inputParameter === undefined) {
+    if (process.argv[3] === undefined) {
         movieName = "Mr. Nobody"
     }
     
@@ -111,20 +107,39 @@ function movie() {
     axios.get(queryURLmovie).then(function(response) {
 
         var movie = response.data;
-
+        if (movie.Title === undefined) {
+            console.log(error);
+        } else {
         console.log();  
         console.log(movie.Title)    
+        console.log("The Plot: " + movie.Plot) 
+        console.log("Actors: " + movie.Actors)      
         console.log("Year the movie came out: " + movie.Year)  
-        console.log("IMDB Rating: " + movie.imdbRating)     
-        console.log(movie.Ratings[1].Source + " Rating: " + movie.Ratings[1].Value)
         console.log("Produced in: " + movie.Country)  
         console.log("Languages of the movie: " + movie.Language) 
-        console.log("The Plot: " + movie.Plot)     
-        console.log("Actors: " + movie.Actors)  
+        console.log("IMDB Rating: " + movie.imdbRating) 
+        console.log(movie.Ratings[1].Source + " Rating: " + movie.Ratings[1].Value)
+        // console.log("Rotten Tomatoes Rating: " + getRottenTomatoesRatingValue(movie))
         console.log();  
-
+        }
     })
-} 
+
+    .catch(function(error) {
+        console.log("(An error occured while finding information about this movie.)");
+     });
+
+}
+    // //function to get proper Rotten Tomatoes Rating
+    // function getRottenTomatoesRating (data) {
+    //     return movie.Ratings.find(function (item) {
+    //     return item.Source === "Rotten Tomatoes";
+    //     });
+    // }
+    
+    // function getRottenTomatoesRatingValue (data) {
+    //     return getRottenTomatoesRating(data).Value;
+    // }
+
 // _____________________________________________________
 
 function says() {       
