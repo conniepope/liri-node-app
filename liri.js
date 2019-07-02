@@ -11,45 +11,51 @@ var fs = require("fs")
 
 var moment = require("moment")
 
-
 var type = process.argv[2]
+console.log(type)
+var inputParameter = process.argv.slice(3).join(" ");
+console.log(inputParameter)
 
-switch (type) {
-    case "concert-this":
-    concert();
-    break;
-    case "spotify-this-song":
-    song();
-    break;
-    case "movie-this":
-    movie();
-    break;
-    case "do-what-it-says":
-    says();
-    break;
-}
+var switchType = function(type, inputParameter) {
+
+   switch (type) {
+        case "concert-this":
+        concert(inputParameter);
+        break;
+        case "spotify-this-song":
+        song(inputParameter);
+        break;
+        case "movie-this":
+        movie(inputParameter);
+        break;
+        case "do-what-it-says":
+        says();
+        break;
+    }
+}    
+switchType(type, inputParameter);
 
 // _____________________________________________________
 function concert() {      
     
-    var artist = process.argv.slice(3).join("+");
+    var artist = inputParameter;
 
     var queryURLconcert = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
 
-    console.log(queryURLconcert)
+    // console.log(queryURLconcert)
     axios.get(queryURLconcert).then(function(response) {
         // console.log(response.data[0])
 
-        for (var i = 0; i < response.data.length; i++) {
+        for (var i = 0; i < 10; i++) {
             var concert = response.data[i];
             var format = moment.HTML5_FMT.DATETIME_LOCAL_SECONDS;
             var date = moment(concert.datetime).format("LL")
 
             // console.log(concert)
-            console.log(concert.venue.name); 
-            console.log(concert.venue.city + " " + concert.venue.region); 
-            console.log(date)    
             console.log()
+            console.log("Venue: " + concert.venue.name); 
+            console.log("Location: " + concert.venue.city + " " + concert.venue.region); 
+            console.log(date)    
         }
     })
     .catch(function(error) {
@@ -60,9 +66,9 @@ function concert() {
 
 function song() {     
 
-    var song = process.argv.slice(3).join(" ");
+    var song = inputParameter;
     
-    if (process.argv[3] === undefined) {
+    if (inputParameter === undefined) {
         song = "The Sign"
     }
 
@@ -85,11 +91,11 @@ function song() {
                 for (var i = 0; i < response.tracks.items.length; i++) {
                     var info = response.tracks.items[i]
                     // console.log(info)
+                    console.log();  
                     console.log(info.artists[0].name)      
                     console.log(info.name);  
                     console.log(info.preview_url);   
                     console.log(info.album.name);  
-                    console.log();  
                 }
             })
             .catch(function() {
@@ -102,9 +108,9 @@ function song() {
 
 function movie() {      
 
-    var movieName = process.argv.slice(3).join(" ");
+    var movieName = inputParameter;
 
-    if (process.argv[3] === undefined) {
+    if (inputParameter === undefined) {
         movieName = "Mr. Nobody"
     }
     
@@ -114,6 +120,7 @@ function movie() {
 
         var movie = response.data;
 
+        console.log();  
         console.log(movie.Title)    
         console.log("Year the movie came out: " + movie.Year)  
         console.log("IMDB Rating: " + movie.imdbRating)     
@@ -123,20 +130,29 @@ function movie() {
         console.log("The Plot: " + movie.Plot)     
         console.log("Actors: " + movie.Actors)  
         console.log();  
+
 })
 } 
 // _____________________________________________________
 
-function says() {       //not sure exactly what this is supposed to do
+function says() {       
 
     fs.readFile("random.txt", "utf8", function(err, data) {
         if (err) {
             return console.log(err);
           }
           else {
-              console.log(data)
-          }
-        type = "spotify-this-song"
+            var defaultInput = data.split(",")  
+   
+          console.log(defaultInput[0])
+          console.log(defaultInput[1])
+
+        type = defaultInput[0];
+        inputParameter = defaultInput[1];
+        switchType(type, inputParameter);
+
+        }
+
     })
 
 }
