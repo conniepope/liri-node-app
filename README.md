@@ -30,13 +30,13 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
 
   * If you type movie-this, next type in a movie name. Once you hit enter, the following will display:
        * Title of the movie.
+       * Plot of the movie
+       * Actors in the movie.
        * Year the movie came out.
+       * Country where the movie was produced.
+       * Languages of the movie.       
        * IMDB rating of the movie.
        * Rotten Tomatoes rating of the movie.
-       * Country where the movie was produced.
-       * Languages of the movie.
-       * Plot of the movie.
-       * Actors in the movie.
  
  ![image](https://user-images.githubusercontent.com/47279070/60549102-dff5f380-9cf1-11e9-80b3-fd54983e5523.png)
 
