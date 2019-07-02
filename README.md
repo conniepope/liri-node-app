@@ -8,11 +8,7 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
 
 ## How it works:
 1. Type into the terminal: node liri 
-2. After that, type in one of these four options: 
-* concert-this
-* spotify-this-song
-* movie-this
-* do-what-it-says. 
+2. After that, type in one of these four options: concert-this, spotify-this-song, movie-this, or do-what-it-says. 
 
   It should look like this:
 
