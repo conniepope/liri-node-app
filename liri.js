@@ -39,8 +39,6 @@ var switchType = function(type, inputParameter) {
         default: 
         console.log("Invalid input. Please type one of the following options: \n  concert-this \n  spotify-this-song \n  movie-this \n  do-what-it-says")
     }
-
-    
 }    
 switchType(type, inputParameter);
 
@@ -57,12 +55,14 @@ function concert() {
         for (var i = 0; i < 10; i++) {
             var concert = response.data[i];
             var format = moment.HTML5_FMT.DATETIME_LOCAL_SECONDS;
-            var date = moment(concert.datetime).format("LL")
+            var date = moment(concert.datetime).format("LLL")
 
-            console.log()
+            console.log("------------ EVENT --------------")
             console.log("Venue: " + concert.venue.name); 
             console.log("Location: " + concert.venue.city + " " + concert.venue.region); 
-            console.log(date)    
+            console.log(date)
+            console.log()
+
         }
     })
     .catch(function(error) {
@@ -87,12 +87,13 @@ function song() {
             
             for (var i = 0; i < response.tracks.items.length; i++) {
                 var info = response.tracks.items[i]
-
-                console.log();  
+                console.log("------------ SONGS --------------")
                 console.log("Artist: " + info.artists[0].name)      
                 console.log("Song: " + info.name);  
                 console.log("Preview Link: " + info.preview_url);   
                 console.log("Album: " + info.album.name);  
+                console.log();  
+
             }
         })
 }       
@@ -114,7 +115,7 @@ function movie() {
         if (movie.Title === undefined) {
             console.log(error);
         } else {
-        console.log();  
+        console.log("------------ MOVIE --------------");  
         console.log(movie.Title)    
         console.log("The Plot: " + movie.Plot) 
         console.log("Actors: " + movie.Actors)      
