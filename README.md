@@ -1,5 +1,5 @@
 # Liri Node App
-LIRI, a command line node app that takes in parameters and gives you back data.
+LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives back data. The user has the option of using four commands in conjuntion with specific parameters associated with the commands. 
 
 https://conniepope.github.io/liri-node-app/.
 
@@ -8,7 +8,8 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
 
 ## How it works:
 1. Type into the terminal: node liri 
-2. After that, type in one of these four options: concert-this, spotify-this-song, movie-this, or do-what-it-says.
+2. After that, type in one of these four options: concert-this, spotify-this-song, movie-this, or do-what-it-says. It should look like this:
+
 ![image](https://user-images.githubusercontent.com/47279070/60461812-a780e780-9c15-11e9-8761-30b5985a9d29.png)
   * If you type concert-this, next type in an artist. Once you hit enter, the following will display:
        * Name of the venue where the concert will take place.
