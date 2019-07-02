@@ -41,5 +41,5 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
  ![image](https://user-images.githubusercontent.com/47279070/60549102-dff5f380-9cf1-11e9-80b3-fd54983e5523.png)
 
   * If you type do-what-it-says, just hit enter and see what it does!
- 3. If you do not pick an artist or movie in their designated catagories, one will be chosen for you.
+ 3. If you do not pick a song or movie in their designated catagories, one will be chosen for you.
   
