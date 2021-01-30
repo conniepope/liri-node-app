@@ -7,8 +7,18 @@ https://conniepope.github.io/liri-node-app/.
 Node.js, Javascript, APIs, Axios, Moment.js, JSON
 
 ## How it works:
-1. Type into the terminal: node liri 
-2. After that, type in one of these four options: concert-this, spotify-this-song, movie-this, or do-what-it-says. 
+
+*Install and run with NPM. Simply open your terminal and type the following commands:
+
+1. $ git clone https://github.com/conniepope/liri-node-app.git
+
+2. $ cd liri-node-app
+
+3. $ npm install
+
+4. Type into the terminal: node liri (don't hit enter yet).
+
+5. Then, type in one of these four options: concert-this, spotify-this-song, movie-this, or do-what-it-says. 
 
   It should look like this:
 
@@ -41,5 +51,5 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
 ![image](https://user-images.githubusercontent.com/47279070/60552137-ac1fcb80-9cfb-11e9-99c5-5949ca8fc35d.png)
 
   * If you type do-what-it-says, just hit enter and see what it does!
- 3. If you do not pick a song or movie in their designated catagories, one will be chosen for you.
+ 6. If you do not pick a song or movie in their designated catagories, one will be chosen for you.
   
