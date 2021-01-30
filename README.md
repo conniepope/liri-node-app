@@ -8,7 +8,7 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
 
 ## How it works:
 
-*Install and run with NPM. Simply open your terminal and type the following commands:
+*Install and run with NPM. Simply open your terminal and type the following commands:*
 
 1. $ git clone https://github.com/conniepope/liri-node-app.git
 
@@ -18,7 +18,7 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
 
 4. Type into the terminal: node liri (don't hit enter yet).
 
-5. Then, type in one of these four options: concert-this, spotify-this-song, movie-this, or do-what-it-says. 
+5. Then, type in one of these options: concert-this or movie-this. 
 
   It should look like this:
 
@@ -29,14 +29,6 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
        * The date of the event.
        
 ![image](https://user-images.githubusercontent.com/47279070/60552124-9d391900-9cfb-11e9-8051-3f87cc06f6ff.png)
-
-  * If you type spotify-this-song, next type in a song name. Once you hit enter, the following will display:
-       * The artist's name.
-       * The song name.
-       * A preview link to the song from Spotify. If you Command-click on the link it will play a snippet of the song.
-       * The album the song is from.
-  
-![image](https://user-images.githubusercontent.com/47279070/60552112-8abedf80-9cfb-11e9-83e3-12a64b58923d.png)
 
   * If you type movie-this, next type in a movie name. Once you hit enter, the following will display:
        * Title of the movie.
@@ -50,6 +42,3 @@ Node.js, Javascript, APIs, Axios, Moment.js, JSON
  
 ![image](https://user-images.githubusercontent.com/47279070/60552137-ac1fcb80-9cfb-11e9-99c5-5949ca8fc35d.png)
 
-  * If you type do-what-it-says, just hit enter and see what it does!
- 6. If you do not pick a song or movie in their designated catagories, one will be chosen for you.
-  
